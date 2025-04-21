@@ -1,11 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
     <title>Card de Perfil</title>
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-900 min-h-screen py-12 grid px-3 font-body">
+    <div class="m-auto">
+      <header class="container mx-auto text-center space-y-10.5">
+        <img class="inline" src="public/logo-codante.svg" alt="" />
+        <p class="text-white text-xl sm:text-[2.125rem]">
+          <strong>Mini projeto</strong> | Card de produto com Tailwind
+        </p>
+      </header>
+      <main class="container mx-auto mt-11">
+        <article
+          class="bg-white border border-gray-500/38 rounded-xl shadow-2xs shadow-blue-200 px-10 py-8 flex flex-col max-w-99 mx-auto"
+        >
+          <div
+            class="flex flex-col sm:flex-row items-center gap-2 sm:gap-8 mb-2.5"
+          >
+            <figure>
+              <img
+                class="size-29 rounded-full object-cover"
+                src="https://github.com/danieldemoura.png"
+                alt=""
+              />
+            </figure>
+            <section class="flex flex-col text-center sm:text-left gap-y-2">
+              <div>
+                <h2 class="font-bold text-xl">Daniel de Moura</h2>
+                <p class="text-xs text-gray-500">Front-end</p>
+              </div>
+              <ul class="flex gap-1.5 justify-center sm:justify-start">
+                <li>
+                  <a href="https://github.com/danieldemoura" target="_blank">
+                    <img
+                      class="size-4.5 hover:scale-120 transition duration-300"
+                      src="./public/github.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/danieldms/"
+                    target="_blank"
+                  >
+                    <img
+                      class="size-4.5 hover:scale-120 transition duration-300"
+                      src="./public/linkedin.svg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+              <a
+                href="https://www.linkedin.com/in/danieldms/"
+                target="_blank"
+                class="bg-blue-600 hover:bg-purple-600 hover:border-purple-700 transition duration-200 border border-blue-600 py-1.5 px-3 rounded-sm text-white text-xs font-semibold flex gap-3 justify-center"
+              >
+                <img src="./public/send.svg" alt="" />
+                <span>Mensagem</span>
+              </a>
+            </section>
+          </div>
+          <hr class="border border-gray-500/12" />
+          <footer class="mt-2.5">
+            <ul class="grid grid-cols-2 gap-y-3 sm:flex sm:justify-between">
+              <li class="text-center flex flex-col">
+                <span class="text-blue-600 font-bold text-xl">45</span>
+                <span class="text-xs text-gray-500">Projetos</span>
+              </li>
+              <li class="text-center flex flex-col">
+                <span class="text-blue-600 font-bold text-xl">6</span>
+                <span class="text-xs text-gray-500">palestras</span>
+              </li>
+              <li class="text-center flex flex-col">
+                <span class="text-blue-600 font-bold text-xl">15</span>
+                <span class="text-xs text-gray-500">artigos</span>
+              </li>
+              <li class="text-center flex flex-col">
+                <span class="text-blue-600 font-bold text-xl">12k</span>
+                <span class="text-xs text-gray-500">segudores</span>
+              </li>
+            </ul>
+          </footer>
+        </article>
+      </main>
+    </div>
   </body>
 </html>
